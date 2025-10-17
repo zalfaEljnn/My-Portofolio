@@ -3,22 +3,174 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>My Portofolio</title>
+        <title>Wear Jeenan</title>
+        <link rel="icon" href="..\images\favicon.ico" type="image/x-icon">
 
         <!-- CSS External --> 
         <link rel="stylesheet" href="css\style.css">
-</head>
+
+        <!--Tailwind CDN -->
+        <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script></script>
+
+        <!-- Catalog-->
+         <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+            <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    </head>
 <body>
     <!-- Header Content -->
-    <header>
-    </header>
+    <header class="main-header"> 
+        
+        <div class="navigator1">
+            <br>
+            <br>
+        </div>
+        <!--Logo Icon-->
+        <div class="background-header">
+            <img src="images\logo-jeenan.jpg" 
+            alt="Logo Icon" 
+            class="logo">
+        </div>
+        <div class="title-header text-center">
+            <h1 class="namaWeb"
+                class="text-4xl font-bold mb-[8px]">Wear Jeenan</h1>
+                <link href="https://fonts.googleapis.com/css2?family=Ephesis&display=swap" rel="stylesheet">
+            <h2 class="text-lg mb-[16px]">Trendy and Comfortable Clothing</h2>
+        <br>
+        </div>
+
+        <!--Navigation Bar-->
+        <nav class="navigator2" 
+             class="flex gap-4 justify-center items-center space-x-8 position-sticky">
+                 <a class="border rounded p-[10px]" href="#home">Home</a>
+                 <a class="border rounded p-[10px]" href="#about">About</a>
+                 <a class="border rounded p-[10px]" href="#catalog">Catalog</a>
+                 <a class="border rounded p-[10px]" href="#feedback">Other</a>
+        </nav>
+    </header> 
 
     <!-- Main Content-->
-    <main>
-    </main>
-    
+    <main class="main-content">
+        <section class="opening-content min-h-[500px] ml-[26px] text-left" id="home">
+            <br>
+            <br>
+            <br>
+            <h1 class="text-2xl font-bold mb-[18px]">Hi <span id="welcome-speech"></span> , Welcome to Wear Jeenan</h1>
+            <br>
+            <h2 class="ml-[26px] mb-[20px] text-left">A space where modesty meets comfort.</h2>
+            <br>
+            <h2 class="ml-[26px] mb-[20px] text-left">We believe clothing isn't about what you wear, it's about how it makes you<em>  feel.</em> Every piece in our collection is crafted to bring warmth, calm, and confidence, so you can move with grace and stay true to yourself</h2>
+            <br>
+            <h2 class="ml-[26px] mb-[20px] text-left">Feel the balance of simplicity and elegance, that's the essence of<em><b>  Jeenan</em>.<b></h2>
+            <a href="#catalog" class="cta-button">View All Product</a>
+        </section>
+       
+        <hr/>
+
+        <section class="additional-content min-h-[500px] ml-[26px] m-[8px]" id="about">
+            <h1 class="text-2xl font-bold mb-[18px]">About Jeenan</h1>
+            <h2 class="font-normal ml-[26px] mb-[20px] text-left">A space where modesty meets comfort.</h2>
+            <br>
+            <br>
+            <h2 class="asal-jeenan font-normal text-center">Why we started Jeenan?</h2>
+            <br>
+            <h2 class=" font-normal [26px] mb-[20px] text-left"><em>Jeenan</em> comes from the arabic word "<b>Jannah</b>", meaning <em>heavens</em> or <em>gardens of paradise</em>. The name reflects our vision to create clothing that feels as peaceful and pure as paradise itself.</h2>
+            <br>
+            <h2 class=" font-normal [26px] mb-[20px] text-left">We started Jeenan with one simple dream: to make modest fashion that doesn't just look good, but also <em>feels right.</em></h2>
+            <h2 class=" font-normal [26px] mb-[20px] text-left">Soft tones, natural fabrics and timeless design, so every outfit reminds you of serenity, comfort, and beauty with purpose.</h2>
+        </section>
+
+        <hr/>
+
+        <section class="main-content min-h-[700px] ml-[26px] m-[8px]" id="catalog" class="container">
+            <h1 class="text-2xl font-bold mb-[18px]">Catalog</h1>
+            <br>
+            <h2 class="font-normal [26px] mb-[18px] text-left">Explore your sense of grace.</h2>
+            <br>
+            <h2 class=" font-normal [26px] mb-[20px] text-left">From everyday comfort to timeless elegance, find pieces that speak to your soul.</h2>
+            <br>
+            <h2 class=" font-normal [26px] mb-[20px] text-left">Each collection is made to be gentle on the skin, calming to the eyes, and easy to wear. Because true style isn't loud, it's quietly confident.</h2>
+            <div class="product-list">
+
+                <!--Product 1-->
+                <div class="product-card" data-name="Fateema" data-price="$26.99"
+                    class="product-item border p-[16px] mb-[16px]">
+                    <img src="images\Fateema1.jpg" alt="Product 1" class="w-full h-auto mb-[8px]">
+                    <h3 class="text-lg font-semibold mb-[4px]">Fateema One Set</h3>
+                    <p class="font-normal text-gray-600 mb-[8px]">Price: $26.99</p>
+                    <button class="view-details font-normal" onclick="document.location='fateema.html'">View Details</button>
+                    <button class="buy-now font-normal" onclick="document.location='buying.html'">Buy Now</button>
+                </div>
+
+                <!--Product 2-->
+                <div class="product-card" data-name="Maryam" data-price="$29.99"
+                    class="product-item border p-[16px] mb-[16px]">
+                    <img src="images\Maryam1.jpg" alt="Product 1" class="w-full h-auto mb-[8px]">
+                    <h3 class="text-lg font-semibold mb-[4px]">Maryam One Set</h3>
+                    <p class="font-normal text-gray-600 mb-[8px]">Price: $29.99</p>
+                    <button class="view-details font-normal" onclick="document.location='maryam.html'">View Details</button>
+                    <button class="buy-now font-normal" onclick="document.location='buying.html'">Buy Now</button>
+                </div>
+
+                <!--Product 3-->
+                <div class="product-card" data-name="Aseeyah" data-price="$24.89"
+                    class="product-item border p-[16px] mb-[16px]">
+                    <img src="images\Aseeyah1.jpg" alt="Product 1" class="w-full h-auto mb-[8px]">
+                    <h3 class="font-normal text-lg font-semibold mb-[4px]">Aseeyah One Set</h3>
+                    <p class="text-gray-600 mb-[8px]">Price: $24.89</p>
+                    <button class="view-details font-normal" onclick="document.location='aseeyah.html'">View Details</button>
+                    <button class="buy-now font-normal" onclick="document.location='buying.html'">Buy Now</button>
+                </div>
+            </div>
+        </section>
+
+        <hr/>
+
+        <section class="contact-content min-h-[200px] ml-[26px] m-[8px]" id="feedback">
+            <h2 class="text-2xl font-bold mb-[18px]">Feedback & Testimonials</h2>
+                    <p class=" font-normal [26px] mb-[20px] text-left">Love our products? Share your thoughts and rate your Jeenan experience below!</p>
+            <br>
+            <form id="feedbackForm" class="font-normal">
+                <input id="name" type="text" placeholder="Your name"
+                class="border p-2 rounded w-80" required />
+
+                <select id="rating" required>
+                    <option value="">Select rating</option>
+                    <option value="5">⭐⭐⭐⭐⭐ - Perfect!</option>
+                    <option value="4">⭐⭐⭐⭐ - Great!</option>
+                    <option value="3">⭐⭐⭐ - Good</option>
+                    <option value="2">⭐⭐ - Meh</option>
+                    <option value="1">⭐ - Bad</option>
+                </select>
+
+                <textarea id="comment" placeholder="Write your feedback here..."
+                 required></textarea>
+
+                <button type="submit" id="submitBtn">Submit</button>
+            </form>
+            <div id="feedbackList" class="font-normal"></div>
+        </section> 
+        </main>
+
     <!-- Footer Content-->
     <footer>
+        <div class="contact-section font-normal text-center p-[16px] bg-gray-200">
+            <h2 class="text-2xl font-bold mb-[18px]">Contact us</h2>
+            <br>
+            <div class="contact-icons">
+                <a href="https://www.instagram.com/jeenan.id/" target="_blank">
+                    <img src="images\instagram.png" alt="Instagram" class="icon">
+                </a>
+                <a href="https://wa.me/6289675704270" target="_blank">
+                    <img src="images\whatsapp2.png" alt="WhatsApp" class="icon">
+                </a>    
+                <a href="mailto:maulidyazalfa03@gmail.com" target="_blank">
+                    <img src="images\email1.png" alt="Email" class="icon">
+                </a>    
+            </div>
+            <div class="footer-note font-normal">
+                <p>&copy; 2025 Wear Jeenan. All rights reserved.</p>
+            </div>
+            
     </footer>
     <!-- Java Script External -->
     <script src="js\script.js"></script>

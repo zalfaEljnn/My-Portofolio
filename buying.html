@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Order | Wear Jeenan</title>
+        <link rel="icon" href="..\images\favicon.ico" type="image/x-icon">
+
+        <!-- CSS External --> 
+        <link rel="stylesheet" href="css\buying.css">
+
+        <!--Tailwind CDN -->
+        <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script></script>
+
+    </head>
+    <body>
+        <main class="container">
+            <h1 class="title">Order — Wear Jeenan</h1>
+
+        <!-- 1) Pilih produk -->
+        <section class="card">
+            <h2>1. Choose product</h2>
+            <div class="products">
+            
+            <!-- Product item (repeat / ubah sesuai assets lu) -->
+            <label class="product" data-name="Fateema One Set" data-price="26.99" data-images='["images/Fateema1.jpg","images/prod1-2.jpg"]'>
+                <input type="radio" name="product" value="Fateema One Set">
+                <img src="images/Fateema1.jpg" alt="Fateema" class="thumb">
+                <div class="meta">
+                    <div class="p-name">Fateema One Set</div>
+                    <div class="p-price">$26.99</div>
+                </div>
+            </label>
+
+            <label class="product" data-name="Maryam One Set" data-price="29.99" data-images='["images/Maryam1.jpg"]'>
+                <input type="radio" name="product" value="Maryam One Set">
+                <img src="images/Maryam1.jpg" alt="Maryam" class="thumb">
+                <div class="meta">
+                    <div class="p-name">Maryam One Set</div>
+                    <div class="p-price">$29.99</div>
+                </div>
+            </label>
+
+            <label class="product" data-name="Aseeyah One Set" data-price="24.89" data-images='["images/Aseeyah1.jpg"]'>
+                <input type="radio" name="product" value="Aseeyah One Set">
+                <img src="images/Aseeyah1.jpg" alt="Aseeyah" class="thumb">
+                <div class="meta">
+                    <div class="p-name">Aseeyah One Set</div>
+                    <div class="p-price">$24.89</div>
+                </div>
+            </label>
+            </div>
+        </section>
+
+        <!-- 2) Preview & pilih gambar/color/size -->
+        <section class="card">
+            <h2>2. Customize</h2>
+
+            <div class="preview-row">
+                <div class="preview">
+                    <img id="mainPreview" src="" alt="preview">
+                 </div>
+
+            <div class="options">
+                <div class="option-block">
+                    <label>Choose color</label>
+                    <div id="colorOptions" class="color-options">
+                        <button type="button" class="color-btn" data-color="Beige" style="background:rgb(236, 212, 125)"></button>
+                        <button type="button" class="color-btn" data-color="Brown" style="background:#603410"></button>
+                        <button type="button" class="color-btn" data-color="Olive" style="background:#5e6e3f"></button>
+                    </div>
+                </div>
+
+                <div class="option-block">
+                    <label>Size</label>
+                    <select id="sizeSelect">
+                        <option value="">Select size</option>
+                        <option value="M">M</option>
+                        <option value="L">L</option>
+                        <option value="XL">XL</option>
+                    </select>
+                </div>
+            </div>
+            </div>
+        </section>
+
+        <!-- 3) Data pembeli -->
+        <section class="card">
+            <h2>3. Buyer info</h2>
+            
+            <form id="orderForm" autocomplete="off">
+                <div class="form-row">
+                    <input id="buyerName" type="text" placeholder="Full name" required>
+                </div>
+                <div class="form-row">
+                    <input id="buyerPhone" type="tel" placeholder="Phone (e.g. 0812xxxx) - used for WhatsApp" required>
+                </div>
+                <div class="form-row">
+                    <input id="buyerEmail" type="email" placeholder="Email (optional)">
+                </div>
+
+                <div class="form-row payment">
+                    <h3>Payment method</h3>
+                    <label class="payment-option">
+                        <input type="radio" name="payment" value="COD" checked> COD (Cash on Delivery)</label>
+                    <label class="payment-option">
+                        <input type="radio" name="payment" value="E-wallet"> E-wallet</label>
+                    <label class="payment-option">
+                        <input type="radio" name="payment" value="Bank transfer"> Bank transfer</label>
+                </div>
+
+                <div class="form-row">
+                    <textarea id="buyerNote" placeholder="Note (optional)"></textarea>
+                </div>
+
+                <div>
+                    <h3>Your purchase will continue on WhatsApp. We'll confirm your address and payment details here. Please double-check your order and info before clicking "Order via WhatsApp" button.</h3>
+                    <h3>—<em>a smooth step before yor order becomes yours.</em></h3>
+                    <br>
+                </div>
+
+                <div class="form-row">
+                    <button id="orderBtn" type="submit">Order via WhatsApp</button>
+                </div>
+            </form>
+        </section>
+
+        <!-- 4) Preview order singkat -->
+        <section class="card">
+            <h2>Order summary</h2>
+            <div id="orderSummary">No product selected yet.</div>
+        </section>
+</main>
+
+<script src="js/buying.js"></script>
+</body>
+</html>

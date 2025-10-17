@@ -1,0 +1,216 @@
+.background-header{ 
+    background-color: rgb(255, 247, 237);
+    height: 200px;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo{
+    height: 200px;
+    width: 200px;
+    border-radius: 200px;
+    object-fit: cover;
+}
+.namaWeb{
+    font-family: 'Ephesis', cursive;
+    font-size: 50px;
+    color: rgb(71, 43, 15);
+}
+.title-header{
+    background-color: rgb(255, 247, 237);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: rgb(71, 43, 15);
+    font-family: ui-monospace;
+}
+.main-header{
+    display: flex;
+    justify-content: flex-end;
+    text-align: center;
+    color: rgb(71, 43, 15);
+    align-items: stretch;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+.navigator1{
+    background-color: rgb(255, 247, 237);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: ui-monospace;
+}
+.navigator2{
+    background-color: rgb(255, 247, 237);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: ui-monospace;
+}
+.main-content{
+    font-family: ui-monospace;
+    background-color: rgb(255, 247, 237);
+    color:rgb(71, 43, 15);
+}
+.container{
+    padding: 60px 20px;
+    max-width: 1200px;
+    margin: auto;
+    text-align: center;
+}
+.cta-button{
+    background-color: #d08734f5;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    width: 100px;
+    height: 40px;
+    bottom: 50px;
+    left: 20px;
+    cursor: pointer;
+    display: inline-block;
+    text-decoration: none;
+    margin-top: 15px;
+}
+.asal-jeenan{
+    font-family: 'Ephesis', cursive;
+    font-size: 40px;
+    color: rgb(71, 43, 15);
+}
+.product-list{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 30px;
+    border-block-color: rgb(224, 203, 177);;
+}
+.product-card {
+    border: 1px solid #ccc;
+    padding: 20px;
+    width: 250px;
+    border-radius: 8px;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+    text-align: center;
+}
+.product-card button {
+    padding: 8px 15px;
+    margin-top: 10px;
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+}
+.view-details {
+    background-color: #d08734f5;
+}
+.buy-now {
+    background-color: rgb(71, 43, 15);
+    color: white;
+}
+#feedback {
+  background-color: rgb(255, 247, 237); /* cream background */
+  text-align: center;
+  padding: 40px;
+  color: rgb(71, 43, 15);
+}
+
+#feedback h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+#feedback p {
+  margin-bottom: 20px;
+  color: rgb(71, 43, 15);
+}
+
+#feedbackForm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+
+#feedbackForm input,
+#feedbackForm select,
+#feedbackForm textarea {
+  width: 250px;
+  padding: 10px;
+  border: 1px solid #aaa;
+  border-radius: 6px;
+  font-family: inherit;
+}
+
+#submitBtn {
+  background-color: #d08734; 
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+#submitBtn:hover {
+  background-color: #b86a22; /* warna saat hover */
+}
+
+#feedbackList {
+  margin-top: 30px;
+  max-width: 400px;
+  margin-inline: auto;
+  text-align: left;
+}
+
+#feedbackList div {
+  background-color: rgb(255, 247, 237);
+  border-radius: 6px;
+  padding: 10px;
+  box-shadow: 2px 2px 6px rgba(0,0,0,0.1);
+  margin-bottom: 10px;
+}
+#buying-page {
+    background-color: rgb(255, 247, 237);
+    font-family: ui-monospace;
+    color: rgb(71, 43, 15);
+    text-align: center;
+    padding: 40px 20px;
+}
+footer{
+    background-color: #f8f8f8;
+    text-align: center;
+    font-family: ui-monospace;
+    color: rgb(0, 0, 0);
+}
+.contact-section{
+    margin-bottom: 15px;
+    font-size: 1.3rem;
+    color: rgb(0, 0, 0);
+}
+.contact-icons{
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin-bottom: 120px;
+}
+.contact-icons a {
+    transition: transform 0.2s ease, opacity 0.2s ease;
+}
+.contact-icons a:hover {
+    transform: scale(1.1);
+    opacity: 0.8;
+}
+.icon{
+    width: 30px;
+    height: 30px;
+}
+.footer-note{
+    font-size: 0.9rem;
+    color: rgb(0, 0, 0);
+    margin-top: 20px;
+}
